@@ -36,10 +36,13 @@ L’entreprise souhaite désormais développer une application d’évaluation d
 
 4. Depuis le terminal en administrateur, se rendre dans le dossier frontend avec le repo Git cloné et lancer les commandes suivantes **sans corriger les erreurs avec un ```npm audit fix```**. Lancer juste la suite de commandes tel quel.
 
-    ```npm install```
-    ```npm uninstall node-sass```
-    ```npm install --save-dev --unsafe-perm node-sass@4.14.1```
-    ```npm start```
+     ```npm install```
+
+     ```npm uninstall node-sass```
+
+     ```npm install --save-dev --unsafe-perm node-sass@4.14.1```
+     
+     ```npm start```
 
 5. Depuis un navigateur, se rendre à l'adresse
 [localhost:4200](localhost:4200)
