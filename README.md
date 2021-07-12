@@ -28,11 +28,17 @@ L’entreprise souhaite désormais développer une application d’évaluation d
     2. Pour windows, télécharger nvm-setup.zip
     3. Dézipper. Double-cliquer sur l'exécutable "nvm-setup.exe"
     4. Ouvrir le terminal et vérifier la version avec la commande 
+
     ```nvm -v```
+
     5. Installer la version de node 12.18.3
+
     ```nvm install 12.18.3```
+
     6. La sélectionner 
+
     ```nvm use 12.18.3```
+    
 
 4. Depuis le terminal en administrateur, se rendre dans le dossier frontend avec le repo Git cloné et lancer les commandes suivantes **sans corriger les erreurs avec un ```npm audit fix```**. Lancer juste la suite de commandes tel quel.
 
