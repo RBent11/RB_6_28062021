@@ -1,5 +1,5 @@
 # So Pekocko 
-## Projet 6 - Formation Développeur Web d'Openclassroom :
+## Projet 6 - Formation Développeur Web d'Openclassroom
 
 ### Construisez une API sécurisée pour une application d'avis gastronomiques
 #### Piquante - La meilleure application de notation de sauces 
