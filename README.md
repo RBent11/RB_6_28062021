@@ -41,9 +41,10 @@ L’entreprise souhaite désormais développer une application d’évaluation d
      ```npm uninstall node-sass```
 
      ```npm install --save-dev --unsafe-perm node-sass@4.14.1```
-     
+
      ```npm start```
 
 5. Depuis un navigateur, se rendre à l'adresse
 [localhost:4200](localhost:4200)
-    La page d'authentification devrait apparaitre.
+
+La page d'authentification devrait apparaitre.
