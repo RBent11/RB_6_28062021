@@ -45,6 +45,6 @@ L’entreprise souhaite désormais développer une application d’évaluation d
      ```npm start```
 
 5. Depuis un navigateur, se rendre à l'adresse
-[localhost:4200](localhost:4200)
+[localhost:4200](http://localhost:4200)
 
 La page d'authentification devrait apparaitre.
