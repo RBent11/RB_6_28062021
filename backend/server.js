@@ -1,5 +1,15 @@
+/**
+ * Fichier de configuration du server node
+ */
+
+/**
+ * Import du module http de node
+ * Import du fichier app.js
+ */
 const http = require('http');
 const app = require('./app');
+
+
 
 const normalizePort = val => {
   const port = parseInt(val, 10);
