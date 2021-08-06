@@ -1,5 +1,7 @@
+//Import de multer
 const multer = require('multer');
 
+//Middleware pour stocker les images dans le dossier images
 const MIME_TYPES = {
   'image/jpg': 'jpg',
   'image/jpeg': 'jpg',

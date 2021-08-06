@@ -1,3 +1,5 @@
+//routes pour la création d'un compte utilisateur ou la connexion d'un utilisateur 
+
 const express = require('express');
 const router = express.Router();
 

@@ -5,7 +5,7 @@ const fs = require('fs');
 
 
 
-
+//Contrôleur pour la création de sauce
 exports.createSauce = (req, res) => {
   const sauceObject = JSON.parse(req.body.sauce);
   delete sauceObject._id;
@@ -23,7 +23,7 @@ exports.createSauce = (req, res) => {
 };
 
 
-
+//Contrôleur pour la modification de sauce
 exports.modifySauce = (req, res) => {
   Sauce.updateOne({
       _id: req.params.id
@@ -40,7 +40,7 @@ exports.modifySauce = (req, res) => {
 };
 
 
-
+//Contrôleur pour la suppression de sauce
 exports.deleteSauce = (req, res) => {
   Sauce.findOne({
       _id: req.params.id
@@ -57,14 +57,15 @@ exports.deleteSauce = (req, res) => {
           .catch(error => res.status(400).json({
             error
           }));
-      });
+      }); 
+      
     })
     .catch(error => res.status(500).json({
       error
     }));
 };
 
-
+//Contrôleur pour récupérer les informations d'une sauce
 exports.getOneSauce = (req, res) => {
   Sauce.findOne({
       _id: req.params.id
@@ -77,7 +78,7 @@ exports.getOneSauce = (req, res) => {
     }));
 };
 
-
+//Contrôleur pour récupérer toutes les sauces
 exports.getAllSauce = (req, res) => {
   Sauce.find()
     .then(sauces => res.status(200).json(sauces))
@@ -89,7 +90,7 @@ exports.getAllSauce = (req, res) => {
 
 
 
-//like dislike function
+//Contrôleur pour la gestion des likes et dislikes
 
 exports.likeOrDislike = (req, res) => {
 
@@ -97,6 +98,8 @@ exports.likeOrDislike = (req, res) => {
   let userChoice = req.body.like;
   let userID = req.body.userId
 
+
+    //Annulation d'un like ou d'un dislike
     if (userChoice === 0 && typeof userChoice === 'number') {
         Sauce.findOne({ _id: req.params.id })
             .then((sauce) => {
@@ -131,7 +134,7 @@ exports.likeOrDislike = (req, res) => {
     }
 
 
-
+    //Like
     else if (userChoice === 1 && typeof userChoice === 'number') {
         Sauce.findOne({ _id: req.params.id })
             .then(() => {
@@ -151,7 +154,7 @@ exports.likeOrDislike = (req, res) => {
     }
 
 
-    
+    //Dislike
     else if (userChoice === -1 && typeof userChoice === 'number') {
         Sauce.findOne({ _id: req.params.id })
             .then(() => {

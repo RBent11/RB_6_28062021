@@ -1,3 +1,5 @@
+//Configuration des routes pour la création, modification, suppression, récupération d'une ou toutes les sauces, liker et disliker les sauces
+
 const express = require('express');
 
 const router = express.Router();

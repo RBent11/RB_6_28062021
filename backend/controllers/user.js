@@ -1,3 +1,4 @@
+// Import des modules bcrypt pour crypter les mots de passe, le modèle User pour la création d'un utilisateur et le module jsonwebtoken pour la création de token de connexion
 const bcrypt = require('bcrypt');
 
 const User = require('../models/User');
@@ -5,8 +6,8 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
 
-
-
+//Fonction inscritpion permettant la création d'un compte avec un email et un mot de passe
+ 
 exports.signup = (req, res) => {
 
   bcrypt.hash(req.body.password, 10)
@@ -31,6 +32,13 @@ exports.signup = (req, res) => {
       error
     }));
 };
+
+
+
+/**
+ Fonction login qui envoie en requête le mail et le mot de passe de l'utiilisateur, 
+ vérifie qu'il existe bien dans la base de données, et permet la connexion en réponse
+ */
 
 exports.login = (req, res) => {
 

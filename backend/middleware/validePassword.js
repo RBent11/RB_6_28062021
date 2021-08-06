@@ -1,3 +1,4 @@
+//Fonction pour indiquer à l'utilisateur un modèle pour renforcer le mot de passe crée
 const Password = require('../models/ValidePassword');
 
 module.exports = (req, res, next) => {
