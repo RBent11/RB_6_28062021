@@ -15,3 +15,4 @@ validePasswordSchema
 .is().not().oneOf(['Passw0rd', 'Password123']); // Mots de passe interdits
 
 module.exports = validePasswordSchema;
+

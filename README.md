@@ -12,7 +12,21 @@ La marque So Pekocko, qui crée des sauces piquantes, connaît un franc succès,
 
 L’entreprise souhaite désormais développer une application d’évaluation de ses sauces piquantes, appelée “Piquante”.
 
+
+Le projet consiste à créer une API REST sécurisée à l'aide de Nodejs, MongoDB et Express.
+
+Les utilisateurs devront pouvoir :
+- créer un compte
+- se connecter
+- ajouter des sauces
+- modifier leurs sauces
+- supprimer leurs sauces
+- afficher les sauces de toutes les utilisateurs 
+- liker ou disliker les sauces
+
 #### Mise en place du projet en local
+
+#### FRONTEND
 
 >:warning: Ouvrir le terminal en administrateur avant de faire les installations 
 
@@ -50,7 +64,18 @@ L’entreprise souhaite désormais développer une application d’évaluation d
 
      ```npm start```
 
+![npm_start](/assets/images/npm_start.png)
+
 5. Depuis un navigateur, se rendre à l'adresse
 [localhost:4200](http://localhost:4200)
 
 La page d'authentification devrait apparaitre.
+
+
+#### BACKEND
+
+Une fois le frontend lancé, se rendre dans le dossier backend et lancer
+
+```nodemon server```
+
+![npm_start](/assets/images/nodemon.png)

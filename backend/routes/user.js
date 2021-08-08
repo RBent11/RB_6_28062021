@@ -10,3 +10,6 @@ router.post('/signup', validePassword, userCtrl.signup);
 router.post('/login', userCtrl.login);
 
 module.exports = router;
+
+
+
